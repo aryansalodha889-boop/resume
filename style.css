@@ -20,7 +20,6 @@ body {
     linear-gradient(to bottom, #2b2a5e 0%, #7a3b69 28%, #d9566a 52%, #f59a4a 75%, #ffd27a 100%) fixed;
 }
 
-/* The translucent white box. Wide side margins keep the photo visible. */
 .cv {
   max-width: 800px;
   margin: 0 auto;
@@ -30,7 +29,6 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* ---------- Header ---------- */
 .header {
   display: flex;
   align-items: flex-start;
@@ -47,9 +45,6 @@ body {
 .contact li + li { margin-top: 2px; }
 .contact a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
 .contact a:hover { color: var(--accent); border-color: var(--accent); }
-
-/* Passport photo: 35mm x 45mm ratio. Replace the img src with your photo. */
-.photo {
   flex: none;
   width: 140px;
   aspect-ratio: 35 / 45;
@@ -57,9 +52,8 @@ body {
   padding: 4px;
   background: #fff;
 }
-.photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
-/* ---------- Sections ---------- */
+.photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .section { margin-top: 30px; }
 .section h2 {
   font-size: 1.05rem;
@@ -83,7 +77,6 @@ body {
 
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 
-/* ---------- Small screens ---------- */
 @media (max-width: 640px) {
   body { padding: 20px 12px; }
   .cv { padding: 28px 22px; }
@@ -91,7 +84,6 @@ body {
   .two-col { grid-template-columns: 1fr; gap: 0; }
 }
 
-/* ---------- Print ---------- */
 @media print {
   body { background: #fff; padding: 0; }
   .cv { box-shadow: none; background: #fff; max-width: none; }
